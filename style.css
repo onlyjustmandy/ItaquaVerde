@@ -225,4 +225,15 @@ header {
     color: #e4405f;
   }
   
+
+  /*inf desenvolvedores*/
+
+  .creditos {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  
   
