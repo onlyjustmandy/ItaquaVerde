@@ -36,6 +36,41 @@
       </div>
     </header>
 
+    <h1>Denúncias Ambientais</h1>
+    <p>Este é um espaço para denúncias relacionadas ao meio ambiente.</p>
+
+    
+
+    <div class="denuncia-foto">
+      <img src="imagens/descarte-irregular.jpg" alt="Descarte ilegal de lixo">
+    </div>
+
+
+  <ul class="lista-denuncia">
+    <li><span class="bolinha vermelho">Descarte irregular de resíduos sólidos</span></li>
+    <li><span class="bolinha marrom">Corte ilegal de árvores</span></li>
+    <li><span class="bolinha cinza">Poluição do ar</span></li>
+    <li><span class="bolinha azul">Poluição da água</span></li>
+    <li><span class="bolinha laranja">Contaminação do solo</span></li>
+    <li><span class="bolinha roxo">Maus tratos a animais</span></li>
+    <li><span class="bolinha preto">Outros</span></li>
+  </ul>
+    </div>
+
+  <div class="denuncia-email">
+    <h2>Envie sua denúncia</h2>
+    <form action="enviar-email.php" method="post" enctype="multipart/form-data">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+      <label for="anexo">Anexar foto ou vídeo:</label>
+      <input type="file" id="anexo" name="anexo">
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
 
 
     <footer>
