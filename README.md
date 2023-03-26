@@ -1,5 +1,7 @@
 # ItaquaVerde
 
+[![NPM] https://img.shields.io/npm/1/react)(https://github.com/onlyjustmandy/ItaquaVerde/blob/main/LICENSE)
+
 #Sobre o projeto
 
 Itaqua Verde é um web app desenvolvido para auxiliar a população de Itaquaquecetuba em questões ambientais. O aplicativo foi criado com o objetivo de facilitar o acesso da comunidade a informações e serviços relacionados ao meio ambiente, visando uma cidade mais sustentável e saudável.
