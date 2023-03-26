@@ -238,10 +238,16 @@ header {
 
   
   /*Página de denúncia*/
+.denuncia-container{
+  display:flex;
+  padding-bottom: 50px;
+}
+
 .denuncia-foto{
   display: inline-block;
   width: 50%;
   align-items: center;
+  padding-left: 90px;
 }
 
   .denuncia-foto img {
@@ -311,11 +317,12 @@ header {
   /*área do email*/
 
   .denuncia-email {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    border-radius: 15px;
   }
   
   .denuncia-email h2 {
