@@ -1,0 +1,228 @@
+:root{
+   background:#E5D9B6; 
+}
+
+/* Estilo do header */
+header {
+  background-color: #222;
+  height: 2cm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* Estilo do logo */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.logo img {
+  width: 238px;
+  height: auto;
+}
+
+/* Estilo do menu */
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+.menu ul ul li {
+  display: block;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+/* Estilo da lupa de busca */
+.busca {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Media queries para tornar o layout responsivo */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .menu {
+    margin-top: 1rem;
+  }
+  
+  .search {
+    margin-top: 1rem;
+  }
+  
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+/*Imagem da página principal*/
+
+  .imagem-cidade {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagem-cidade img {
+    max-width: 100%;
+    max-height: auto;
+  }
+  
+  /*Posicionamento do logo no meio da imagem principal*/
+
+  .imagem-cidade img:last-child {
+    position: absolute;
+    display: flex;
+    max-width: 100px;
+  }
+
+  /*Botões para abrir outras páginas*/
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 0 10px;
+    transition: background-image 0.3s ease;
+  }
+  
+  button:hover {
+    background-image: #000;
+  }
+  
+  button a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .red-button {
+    background-image: linear-gradient(62deg, #F55353 0%, #F6F54D 100%);
+  }
+  
+  .blue-button {
+    background-image: linear-gradient(73deg, #368B85 0%, #B5FFD9 100%) ;
+  }
+  
+  .green-button {
+    background-image: linear-gradient(73deg, #9C2C77 0%, #FD841F 100%) ;
+  }
+  
+  .yellow-button {
+    background-image: linear-gradient(73deg, #002B5B 0%, #ADC2A9 100%) ;
+  }
+
+
+  /*FOOTER */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .footer-left {
+    width: 20%;
+  }
+  
+  .footer-left img {
+    width: 100%;
+  }
+  
+  .footer-center {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .footer-right {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .footer-right a {
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .fa-facebook-square {
+    color: #3b5998;
+  }
+  
+  .fa-youtube {
+    color: #ff0000;
+  }
+  
+  .fa-instagram {
+    color: #e4405f;
+  }
+  
+  
