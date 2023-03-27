@@ -136,6 +136,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   
   button {
@@ -161,6 +162,15 @@ header {
     font-weight: bold;
   }
   
+
+  @media only screen and (max-width: 600px) {
+    button {
+      height: 100px;
+      width: 100px;
+      margin: 0 5px;
+    }
+  }
+
   .red-button {
     background-image: linear-gradient(62deg, #F55353 0%, #F6F54D 100%);
   }
@@ -226,6 +236,23 @@ header {
     color: #e4405f;
   }
   
+  @media only screen and (max-width: 768px) {
+    footer {
+      flex-wrap: wrap;
+    }
+  
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    .footer-right {
+      margin-bottom: 0;
+    }
+  }
 
   /*inf desenvolvedores*/
 
