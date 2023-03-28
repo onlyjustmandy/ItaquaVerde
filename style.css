@@ -184,18 +184,21 @@ header {
     background-color: transparent;
     border: 2px;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    margin: 0 10px;
+    height: 8vw; /* altura em porcentagem da viewport width */
+  width: 8vw; /* largura em porcentagem da viewport width */
+  margin: 0 2vw; /* margem em porcentagem da viewport width */
     transition: background-image 0.3s ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   }
   
   button:hover {
     background-image: #000;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--cor-fundo), 0 0 70px var(--cor-fundo), 0 0 80px var(--cor-fundo), 0 0 100px var(--cor-fundo), 0 0 150px var(--cor-fundo);
   }
   
   button a {
-    color: #000;
+    color: var(--cor-fundo);
     text-decoration: none;
     font-weight: bold;
   }
@@ -203,26 +206,26 @@ header {
 
   @media only screen and (max-width: 600px) {
     button {
-      height: 100px;
-      width: 100px;
-      margin: 0 5px;
+      height: 15vw;
+      width: 15vw;;
+      margin: 0 2vw;
     }
   }
 
   .red-button {
-    background-image: linear-gradient(62deg, #E34331 0%, #FAC722 100%);
+    background-image: linear-gradient(73deg, #a11600 0%, #E01818 100%);
   }
   
   .blue-button {
-    background-image: linear-gradient(73deg, #624C98 0%, #30AE9F 100%) ;
+    background-image: linear-gradient(73deg, #5A6B26 0%, #77B430 100%) ;
   }
   
   .green-button {
-    background-image: linear-gradient(73deg, #77b430 0%, #2297D1 100%) ;
+    background-image: linear-gradient(73deg, #1A3963 0%, #2297D1 100%) ;
   }
   
   .yellow-button {
-    background-image: linear-gradient(73deg, #002B5B 0%, #ADC2A9 100%) ;
+    background-image: linear-gradient(73deg, #EF9112 0%, #FAC722 100%) ;
   }
 
 
