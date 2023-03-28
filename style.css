@@ -32,25 +32,11 @@ header {
   padding: 0 1rem;
 }
 
-/* Estilo do logo */
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-
-.logo img {
-  width: 238px;
-  height: auto;
-}
-
 /* Estilo do menu */
 .menu {
-  flex: 1;
+  flex-grow: 1;
   display: flex;
   justify-content: left;
-  
   
 }
 
@@ -61,8 +47,7 @@ header {
   display: flex;
   background-color: var(--brasao-azul); /* adiciona transparência */
   border-radius: 10px; /* adiciona bordas arredondadas */
-
-  
+ 
 }
 
 .menu li {
@@ -94,27 +79,42 @@ header {
   display: block;
 }
 
-/* Estilo da lupa de busca */
-.busca {
-  flex: 1;
+/* Estilo do logo */
+.logo {
   display: flex;
-  justify-content: flex-end;
-  position: relative;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 1.5cm;
+  margin-right: auto; /* move o logo para a esquerda */
+}
+
+/* Estilo da imagem do logo */
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .busca input {
   background-color: transparent;
+  width: 50px; /* Define a largura da caixa de texto como 200 pixels */
   border: none;
   border-bottom: 2px solid white;
   color: white;
   padding: 0.5rem;
+  font-size: 0.8rem; /*Aqui diminui o tamanho da fonte da busca*/
 }
 
-.search img {
+.busca img {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.busca i {
+  color: white; /* Define a cor do ícone como branco */
 }
 /* Media query para dispositivos móveis com largura máxima de 480 pixels */
 @media only screen and (max-width: 480px) {
@@ -123,18 +123,21 @@ header {
   }
   
   .logo img {
-    width: 150px;
+  height: 1cm;
+  width: auto;
   }
   
   .menu {
+    height: 1cm;
+    width: auto;
     display: none;
   }
   
-  .search {
+  .busca {
     flex: 1;
   }
   
-  .search input {
+  .busca input {
     width: 100%;
   }
 }
@@ -147,11 +150,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom:  50px;
   }
   
   .imagem-cidade img {
-    max-width: 100%;
-    max-height: auto;
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
   
   /*Posicionamento do logo no meio da imagem principal*/
