@@ -157,7 +157,19 @@ button.botao{
   /*PRECISA ARRUMAR*/
 }
 
+h1 {
+  font-size: 2rem; /* Define o tamanho da fonte como 2 rem */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  text-align: center;
+  font-family: ;
   
+}  
+
+p {
+font-size: 1.5vw;
+text-align: center;
+font-family: ;
+}
  
 /*Imagem da página principal*/
 
@@ -244,6 +256,52 @@ button.botao{
   .yellow-button {
     background-image: linear-gradient(73deg, #EF9112 0%, #FAC722 100%) ;
   }
+
+/*Botões com as informações de descarte*/
+
+.lista-denuncia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.denuncia-0{
+  background-image: linear-gradient(73deg, #1A3963 0%, #2297D1 100%) ;
+}
+
+.denuncia-1{
+  background-image: linear-gradient(73deg, #17817A 0%, #30AE9F 100%) ;
+}
+
+.denuncia-2{
+  background-image: linear-gradient(73deg, #5A6B26 0%, #77B430 100%) ;
+}
+
+.denuncia-3{
+  background-image: linear-gradient(73deg, #EF9112 0%, #FAC722 100%) ;
+}
+
+.denuncia-4{
+  background-image: linear-gradient(73deg, #E34331 0%, #EF9112 100%) ;
+}
+
+.denuncia-5{
+  background-image: linear-gradient(73deg, #7E2E87 0%, #E34331 100%) ;
+}
+
+.denuncia-6{
+  background-image: linear-gradient(73deg, #53266A 0%, #624C98 100%) ;
+}
+
+.denuncia-7{
+  background-image: linear-gradient(73deg, #1A3963 0%, #2297D1 100%) ;
+}
+
+
+
+
 
 
   /*FOOTER */
