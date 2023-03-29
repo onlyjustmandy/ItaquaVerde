@@ -162,7 +162,7 @@ h1 {
   font-weight: bold; /* Define o peso da fonte como negrito */
   text-align: center;
   font-family: ;
-  
+
 }  
 
 p {
@@ -257,14 +257,88 @@ font-family: ;
     background-image: linear-gradient(73deg, #EF9112 0%, #FAC722 100%) ;
   }
 
+
+
 /*Botões com as informações de descarte*/
+
+.denuncia-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-color: #0000ff;
+  border-radius: 5vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  
+}
+
 
 .lista-denuncia {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+}
+
+.denuncia-0, .denuncia-1, .denuncia-2, .denuncia-3, .denuncia-4, .denuncia-5, .denuncia-6, .denuncia-7 {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3CB371;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .denuncia-container {
+    flex-direction: column;
+  }
+  .denuncia-foto {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .denuncia-foto {
+    flex: 1 0 30%;
+    margin-right: 150px;
+    margin-bottom: 5px;
+  }
+
+  .lista-denuncia {
+    flex: 1 0 60%;
+    justify-content: flex-start;
+  }
+}
+
+.lista-denuncia button {
+  margin-bottom: 1vw;
+}
+
+.imagem-grande{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.imagem-grande img{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .denuncia-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .lista-denuncia {
+    justify-content: center;
+  }
 }
 
 .denuncia-0{
@@ -384,20 +458,24 @@ font-family: ;
   /*Página de denúncia*/
 .denuncia-container{
   display:flex;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .denuncia-foto{
-  display: inline-block;
-  width: 50%;
+  
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 90px;
+  height: 50%;
 }
 
   .denuncia-foto img {
-    max-width: 400px;
-    height: auto;
+    max-width: 90%;
+    max-height: 90%;
     border-radius: 5%;
+    object-fit: contain;
   }
 
 .denuncia-tipos{
