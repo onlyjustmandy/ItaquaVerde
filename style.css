@@ -539,17 +539,19 @@ font-family: ;
   /*área do email*/
 
   .denuncia-email {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--engrenagem-azulceu);
     padding: 20px;
-    width: 100%;
-    max-width: 500px;
+    width: 90%
     margin: 0 auto;
-    border-radius: 15px;
+    border-radius: 5vw;
   }
   
   .denuncia-email h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: center;
+    color: var(--cor-fundo);
+    
   }
   
   .denuncia-email form {
@@ -557,32 +559,56 @@ font-family: ;
     flex-direction: column;
   }
   
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  
+  .input-field {
+    margin-right: 10px;
+  }
+  
+  .input-field:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
   .denuncia-email label {
     font-weight: bold;
     margin-bottom: 5px;
   }
   
   .denuncia-email input[type="text"],
-  .denuncia-email input[type="email"],
-  .denuncia-email textarea {
+  .denuncia-email input[type="email"] {
     border: 2px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 16px;
+    width: 48%;
+    float: left;
   }
-  
+  .denuncia-email textarea{
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 48%;
+    float: right;
+  }
+
   .denuncia-email input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: var(--brasao-azul);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 5px;
     margin-top: 10px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 52vw;
   }
   
   .denuncia-email input[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color:var(--brasao-amarelo);
   }
   
