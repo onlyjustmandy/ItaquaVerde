@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-4lBg6weOof/K7Y1TCQ04g8rGvCv57TmHrcTccMn1sAOrvZhGpEfnjgcYUDwUsyN8zvMBx3tqNzSKcNuWZmg8vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 
 <body>
@@ -44,35 +46,34 @@
 <div class="denuncia-container">
 
     <div class="denuncia-foto">
-      <img src="imagens/descarte-irregular.jpg" alt="Descarte ilegal de lixo">
+      <img id="foto-denuncia" src="imagens/descarte-irregular.jpg" alt="Descarte ilegal de lixo">
     </div>
+
   <div class="lista-denuncia">
 
-    <button class="denuncia-0"><a href="">
-     Descarte irregular</a></button>
+    <button class="denuncia-0" onclick="trocarFoto('imagens/descarte-irregular.jpg')">Descarte irregular</button>
   
-    <button class="denuncia-1"><a href="">
-    Corte ilegal de árvores</a></button>
+    <button class="denuncia-1" onclick="trocarFoto('imagens/corte-ilegal.jpeg')">
+    Corte ilegal de árvores</button>
 
-    <button class="denuncia-2"><a href="">
-    Poluição do ar</a></button>
+    <button class="denuncia-2" onclick="trocarFoto('imagens/vista-aerea-da-cidade-no-meio-do-nevoeiro.jpg')">
+    Poluição do ar</button>
 
-    <button class="denuncia-3"><a href="">
-     Poluição da água</a></button>
+    <button class="denuncia-3" onclick="trocarFoto('imagens/conceito-de-poluicao-da-agua-com-lixo.jpg')">
+     Poluição da água</button>
 
-    <button class="denuncia-4"><a href="">
-     Contaminação do solo</a></button>
+    <button class="denuncia-4" onclick="trocarFoto('imagens/foto-de-foco-seletivo-de-uma-pessoa-usando-luvas-segurando-pneus-de-borracha-picados.jpg')">Contaminação do solo</button>
 
-    <button class="denuncia-5"><a href="">
-     Maus tratos a animais</a></button>
+    <button class="denuncia-5" onclick="trocarFoto('imagens/cachorros-fofos-atras-da-cerca-esperando-para-serem-adotados.jpg')">
+     Maus tratos a animais</button>
 
-    <button class="denuncia-6"><a href="">
-     Caça a animais silvestres</a></button>
+    <button class="denuncia-6" onclick="trocarFoto('imagens/tiro-vertical-de-um-papagaio-de-arara-empoleirado-ao-ar-livre-em-um-parque-durante-o-dia.jpg')">Caça a animais silvestres</button>
 
-    <button class="denuncia-7"><a href="">
-     Outros</a></button>
+    <button class="denuncia-7" onclick="trocarFoto('imagens/feche-o-conceito-de-coleta-de-lixo.jpg')">Outros</button>
   </div>
 </div>
+
+
 
   <div class="denuncia-email">
     <h2>Envie sua denúncia</h2>
@@ -120,6 +121,7 @@
  
     
     <script src="https://kit.fontawesome.com/4d8eecaa03.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
