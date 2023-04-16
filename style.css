@@ -287,11 +287,11 @@ font-family: ;
   border-radius: 50%;
   background-color: #3CB371;
   color: #FFFFFF;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
+
 }
+
+
 
 @media (max-width: 768px) {
   .denuncia-container {
@@ -345,38 +345,81 @@ font-family: ;
   background-image: linear-gradient(73deg, #1A3963 0%, #2297D1 100%) ;
 }
 
+.denuncia-0 img{
+  width: 100%;
+  height: auto;
+  padding: auto;
+}
+
 .denuncia-1{
   background-image: linear-gradient(73deg, #17817A 0%, #30AE9F 100%) ;
+}
+
+.denuncia-1 img{
+  width: 100%;
+  height: auto;
+  padding: auto;
 }
 
 .denuncia-2{
   background-image: linear-gradient(73deg, #5A6B26 0%, #77B430 100%) ;
 }
 
+.denuncia-2 img{
+  width: 100%;
+  height: auto;
+  padding: auto;
+}
+
 .denuncia-3{
   background-image: linear-gradient(73deg, #EF9112 0%, #FAC722 100%) ;
+}
+
+.denuncia-3 img{
+  width: 100%;
+  height: auto;
+  padding: auto;
 }
 
 .denuncia-4{
   background-image: linear-gradient(73deg, #E34331 0%, #EF9112 100%) ;
 }
 
+.denuncia-4 img{
+  width: 100%;
+  height: auto;
+  padding: auto;
+}
+
 .denuncia-5{
   background-image: linear-gradient(73deg, #7E2E87 0%, #E34331 100%) ;
+}
+
+.denuncia-5 img{
+  width: 100%;
+  height: auto;
+  padding: auto;
 }
 
 .denuncia-6{
   background-image: linear-gradient(73deg, #53266A 0%, #624C98 100%) ;
 }
 
+.denuncia-6 img{
+  width: 100%;
+  height: auto;
+  padding: auto;
+}
+
 .denuncia-7{
   background-image: linear-gradient(73deg, #1A3963 0%, #2297D1 100%) ;
 }
 
-
-
-
-
+.denuncia-7 img{
+  width: 100%;
+  height: auto;
+  padding: auto;
+}
 
   /*FOOTER */
 
@@ -611,4 +654,7 @@ font-family: ;
   .denuncia-email input[type="submit"]:hover {
     background-color:var(--brasao-amarelo);
   }
+  
+
+
   
