@@ -263,15 +263,14 @@ font-family: ;
 
 .denuncia-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  width: auto;
+  height: auto;
+  grid-template-columns: repeat(1, 2fr);
   background-color: #0000ff;
-  border-radius: 5vw;
   padding-top: 3vw;
   padding-bottom: 3vw;
   
 }
-
 
 .lista-denuncia {
   display: flex;
@@ -290,8 +289,6 @@ font-family: ;
   display: inline-block;
 
 }
-
-
 
 @media (max-width: 768px) {
   .denuncia-container {
@@ -421,6 +418,7 @@ font-family: ;
   padding: auto;
 }
 
+
   /*FOOTER */
 
   footer {
@@ -511,12 +509,11 @@ font-family: ;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
 }
 
   .denuncia-foto img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: auto;
     border-radius: 5%;
     object-fit: contain;
   }
