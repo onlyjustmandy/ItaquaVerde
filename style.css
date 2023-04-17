@@ -262,21 +262,19 @@ font-family: ;
 /*Botões com as informações de descarte*/
 
 .denuncia-container {
-  display: grid;
-  width: auto;
+
+  width: 100%;
   height: auto;
-  grid-template-columns: repeat(1, 2fr);
   background-color: #0000ff;
   padding-top: 3vw;
   padding-bottom: 3vw;
-  
 }
 
 .lista-denuncia {
-  display: flex;
+  display: flex;;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .denuncia-0, .denuncia-1, .denuncia-2, .denuncia-3, .denuncia-4, .denuncia-5, .denuncia-6, .denuncia-7 {
@@ -286,7 +284,7 @@ font-family: ;
   border-radius: 50%;
   background-color: #3CB371;
   color: #FFFFFF;
-  display: inline-block;
+  display:flex;
 
 }
 
@@ -498,30 +496,33 @@ font-family: ;
   
   /*Página de denúncia*/
 .denuncia-container{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display:grid;
+  grid-template-columns: repeat(3,33.33%);
 }
 
 .denuncia-foto{
-  
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  justify-content:center;
   align-items: center;
+  padding-left: 3vw;
 }
 
   .denuncia-foto img {
-    max-width: 100%;
-    max-height: auto;
+    width: 32vw;
+    position: absolute;
     border-radius: 5%;
-    object-fit: contain;
   }
 
+  .denuncia-texto {
+
+  } 
+
 .denuncia-tipos{
-  display: inline-block;
-  width: 50%;
-  align-items: center;
+  display:grid;
+  grid-template-columns: repeat(2,50%);
+  
 }
 
   
@@ -529,7 +530,7 @@ font-family: ;
   /*Bolinhas*/
 
   .lista-denuncia {
-    display: flex;
+    display:grid;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -583,7 +584,7 @@ font-family: ;
     padding: 20px;
     width: 90%
     margin: 0 auto;
-    border-radius: 5vw;
+
   }
   
   .denuncia-email h2 {
