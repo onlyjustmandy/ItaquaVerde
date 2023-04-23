@@ -547,36 +547,9 @@ font-family: ;
     border-radius: 50%;
     text-align:center;
     line-height: 1.2;
-    color: white;
-    background-image: linear-gradient(to bottom right, #ff000083, #ff8c00); /* Cor vermelha com gradiente para laranja para Descarte irregular de resíduos sólidos */
-  }
-  
-  .marrom {
-    background-image: linear-gradient(to bottom right, #7711b3, #e3f309); /* Cor marrom com gradiente para marrom avermelhado para Corte ilegal de árvores */
-  }
-  
-  .cinza {
-    background-image: linear-gradient(to bottom right, #808080, #ec6dbc); /* Cor cinza com gradiente para cinza escuro para Poluição do ar */
-  }
-  
-  .azul {
-    background-image: linear-gradient(to bottom right, #0080ff, #0000ff); /* Cor azul com gradiente para azul escuro para Poluição da água */
-  }
-  
-  .laranja {
-    background-image: linear-gradient(to bottom right, #ffa500, #ffd700); /* Cor laranja com gradiente para amarelo para Contaminação do solo */
-  }
-  
-  .roxo {
-    background-image: linear-gradient(to bottom right, #800080, #4b0082); /* Cor roxo com gradiente para azul escuro para Maus tratos a animais */
-  }
-  
-  .preto {
-    background-image: linear-gradient(to bottom right, #000000, #696969); /* Cor preta com gradiente para cinza escuro para Outros */
   }
   
   
-
   /*área do email*/
 
   .denuncia-email {
@@ -653,6 +626,155 @@ font-family: ;
     background-color:var(--brasao-amarelo);
   }
   
+/*Página kids*/
 
+.buttons {
+  text-align: center;
+  margin-top: 50px;
+}
 
+.game-button1 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.game-button2 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.game-button3 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.game-button4 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.game-button5 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.game-button:hover {
+  transform: scale(1.1);
+}
+
+.game-button img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .buttons {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .game-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .buttons {
+    font-size: 14px;
+  }
+}
+
+.game-button1{
+  background-image: linear-gradient(73deg, #17817A 0%, #30AE9F 100%) ;
+}
+
+.game-button1 img{
+  width: 80%;
+  height: auto;
+  padding: auto;
+}
+
+.game-button2{
+  background-image: linear-gradient(73deg, #5A6B26 0%, #77B430 100%) ;
+}
+
+.game-button2 img{
+  width: 80%;
+  height: auto;
+  padding: auto;
+}
+
+.game-button3{
+  background-image: linear-gradient(73deg, #EF9112 0%, #FAC722 100%) ;
+}
+
+.game-button3 img{
+  width: 80%;
+  height: auto;
+  padding: auto;
+}
+
+.game-button4{
+  background-image: linear-gradient(73deg, #E34331 0%, #EF9112 100%) ;
+}
+
+.game-button4 img{
+  width: 80%;
+  height: auto;
+  padding: auto;
+}
+
+.game-button5{
+  background-image: linear-gradient(73deg, #7E2E87 0%, #E34331 100%) ;
+}
+
+.game-button5 img{
+  width: 80%;
+  height: auto;
+  padding: auto;
+}
   
