@@ -778,3 +778,65 @@ font-family: ;
   padding: auto;
 }
   
+/*Jogo da memória*/
+#level-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+#level-selection h2 {
+  margin-bottom: 20px;
+}
+
+#level-selection button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#level-selection button:hover {
+  background-color: #0d47a1;
+}
+
+#gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card.matched {
+  border: 2px solid green;
+  box-shadow: none;
+  cursor: default;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
